@@ -6,13 +6,11 @@ body {
 
 .content {
     height: 2000px;
-    /* Para simular contenido largo */
     padding-top: 100px;
-    /* Espacio para la barra de navegación */
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #e8e8e8;
     color: white;
     padding: 10px 20px;
     position: fixed;
@@ -22,7 +20,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    z-index: 10;
 }
+
 
 .navbar.sticky {
     position: fixed;
@@ -30,6 +30,32 @@ body {
     left: 0;
     right: 0;
     border-radius: 0;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #FF69B4;
+}
+nav ul li a.active {
+    color: #008cff; /* Azul para la pestaña activa */
+    font-weight: bold; /* Opcional, para resaltar más */
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px;
 }
 
 .navbar ul {
@@ -44,8 +70,17 @@ body {
     margin-left: 20px;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+#carouselExample {
+    height: 400px; /* altura max de carousel*/
+    overflow: hidden; /* que recorte la imagen si es que mide mas*/
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+
+.carousel-item img {
+    height: 100%; /* Que ocupe el 100% del carousel*/
+    object-fit: cover; 
 }
