@@ -71,7 +71,7 @@ nav ul li a.active {
 }
 
 #carouselExample {
-    height: 400px; /* altura max de carousel*/
+    height: 700px; /* altura max de carousel*/
     overflow: hidden; /* que recorte la imagen si es que mide mas*/
 }
 
