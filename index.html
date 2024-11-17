@@ -10,18 +10,18 @@
   <link rel="stylesheet" href="styles.css" type="text/css">
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-        fetch('html_modules/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-container').innerHTML = data;
-            });
+      fetch('html_modules/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
     });
     document.addEventListener('DOMContentLoaded', () => {
-        fetch('html_modules/navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-bar-container').innerHTML = data;
-            });
+      fetch('html_modules/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav-bar-container').innerHTML = data;
+        });
     });</script>
 </head>
 
@@ -50,9 +50,54 @@
     </button>
   </div>
 
+  <div id="preparation_process">
+    <h1 id="preparation_process_title">PROCESO DE ELABORACIÓN</h1>
+    <p id="process_description">
+      Preocupados por llevar hasta tu paladar productos de la más alta calidad,<br>
+      en <span class="highlight">HELADOS DELCIAS</span> seleccionamos nuestros ingredientes, tanto nacionales como
+      importados, siempre bajo estrictas normas para garantizar tu satisfacción.
+    </p>
+    <div id="steps_container">
+      <div class="step">
+        <div class="circle">1</div>
+        <p class="step_description">Seleccionamos los mejores frutos</p>
+      </div>
+      <div class="line"></div>
+      <div class="step">
+        <div class="circle">2</div>
+        <p class="step_description">Procesamos con cuidado</p>
+      </div>
+      <div class="line"></div>
+      <div class="step">
+        <div class="circle">3</div>
+        <p class="step_description">Garantizamos calidad</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 
-  <div id="footer-container"></div></body>
+  <div id="footer-container"></div>
+</body>
 
 </html>
