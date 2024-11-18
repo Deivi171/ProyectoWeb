@@ -5,6 +5,16 @@
     /* que recorte la imagen si mide más */
 }
 
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
 #branches_top_div {
     background-image: url('images/sky.jpg');
     background-size: cover;
