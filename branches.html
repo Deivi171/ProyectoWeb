@@ -8,6 +8,8 @@
     <!-- Agregar el CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="navbar_styles.css" type="text/css">
+    <link rel="stylesheet" href="branches_styles.css" type="text/css">
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             fetch('html_modules/footer.html')
@@ -29,17 +31,41 @@
 
     <div id="nav-bar-container"></div>
 
-    <div class="card" style="width: 40rem;">
-        <div class="card-body">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54217.43744374633!2d-116.67132205136718!3d31.863374699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d88d91c098735b%3A0x8d397f46b779555e!2sHelados%20Delicias!5e0!3m2!1ses-419!2smx!4v1731719739856!5m2!1ses-419!2smx"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <h5 class="card-title">Sucursal 1</h5>
-          <p class="card-text">En esta sucursal lalala</p>
-          <a href="#" class="btn btn-primary">Ir a</a>
+    <div id="branches_top_div">
+        <h1 id="preparation_process_title">Visita cualquiera de nuestras sucursales!</h1>
+    </div>
+
+    <div id="branchesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="card1">
+                <div class="d-flex h-100 align-items-center justify-content-between">
+                    <div class="card" style="width: 40rem;">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54217.43744374633!2d-116.67132205136718!3d31.863374699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d88d91c098735b%3A0x8d397f46b779555e!2sHelados%20Delicias!5e0!3m2!1ses-419!2smx!4v1731719739856!5m2!1ses-419!2smx"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Sucursal Aguilas</b></h5>
+                            <p class="card-text">Visita nuestra sucursal!</p>
+                            <a href="https://maps.app.goo.gl/7JZCCLpNPVawmHBq6" class="btn btn-primary">Ir a</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
