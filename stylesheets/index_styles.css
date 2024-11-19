@@ -17,7 +17,7 @@
 }
 
 #preparation_process {
-    background-image: url('images/sky.jpg');
+    background-image: url('/images/sky.jpg');
     background-size: cover;
     background-position: center;
     padding: 500px;

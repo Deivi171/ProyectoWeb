@@ -16,13 +16,13 @@
 }
 
 #branches_top_div {
-    background-image: url('images/sky.jpg');
+    background-image: url('/images/sky.jpg');
     background-size: cover;
     padding: 300px;
 }
 
 #card1 {
-    background-image: url('images/bg1.png');
+    background-image: url('/images/bg1.png');
     background-size: cover;
     padding: 300px;
 }
