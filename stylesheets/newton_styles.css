@@ -1,0 +1,15 @@
+#preparation_process_title {
+    padding-top: 18rem;
+    padding-left: 8rem;
+}
+
+#newton_top_div {
+    background-image: url('/images/sky.jpg');
+    background-size: cover;
+    height: auto;
+}
+
+#newton_image {
+    border-radius: 50%;
+    height: 10rem;
+}
