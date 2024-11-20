@@ -1,0 +1,107 @@
+#history_top_div {
+    background-image: url('/images/sky.jpg');
+    background-size: cover;
+    padding: 300px;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .historia .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .historia img {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+  }
+  
+  .rosa {
+    background-color: #ff007f;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  .servicios ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .servicios ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .servicios .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .servicios img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .morado {
+    background-color: #7b3c98;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  .catalogo img {
+    max-width: 200px;
+  }
+  
+  .contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
