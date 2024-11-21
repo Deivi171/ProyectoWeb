@@ -1,4 +1,118 @@
-<footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
-    <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-    <p><a href="privacidad.html" style="color: #FF69B4;">Política de Privacidad</a></p>
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Redes Sociales</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .footer {
+      background-color: #fff; /* Fondo blanco */
+      color: #7b4a7d; /* Color de texto púrpura */
+      padding: 2rem 1rem;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .footer .social-icons a {
+      font-size: 2rem;
+      color: #7b4a7d;
+      margin-right: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer .social-icons a:hover {
+      color: #ffcc00; /* Color amarillo para hover */
+    }
+
+    .footer .contact-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #7b4a7d;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .footer .contact-button:hover {
+      background-color: #ffcc00; /* Hover del botón */
+    }
+
+    .footer p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .footer .section {
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      .footer .section {
+        flex: 1;
+        padding: 0 1rem;
+      }
+
+      .footer .social-icons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <footer class="footer">
+    <!-- Redes sociales -->
+    <div class="section">
+      <h3>CONTACTANOS</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/heladosdelicias1961/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/heladosdelicias1961/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <a href="#" class="contact-button">📞 646 176 1240</a>
+    </div>
+
+    <!-- Dirección -->
+    <div class="section">
+      <h3>DIRECCIÓN</h3>
+      <p>Av. Quintana Roo 273,</p>
+      <p>Independencia, 22840</p>
+      <p>Ensenada, B.C.</p>
+    </div>
+
+    <!-- Horarios -->
+    <div class="section">
+      <h3>HORARIO</h3>
+      <p>🕒 Matriz: Todos los días 9:00am a 7:00pm</p>
+      <p>🕒 Sucursales: Lunes cerrado</p>
+      <p>🕒 Martes a domingo 10:00am a 7:00pm</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
