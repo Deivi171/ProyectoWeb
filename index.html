@@ -10,21 +10,6 @@
   <link rel="stylesheet" href="stylesheets/navbar_styles.css" type="text/css">
   <link rel="stylesheet" href="stylesheets/index_styles.css" type="text/css">
   <link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      fetch('html_modules/footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer-container').innerHTML = data;
-        });
-    });
-    document.addEventListener('DOMContentLoaded', () => {
-      fetch('html_modules/navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('nav-bar-container').innerHTML = data;
-        });
-    });</script>
 </head>
 
 <body>
@@ -33,16 +18,13 @@
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/carousel2/36.JPG" class="d-block w-100" alt="Imagen 1">
+        <img src="images/carousel/11.jpg" class="d-block w-100" alt="Imagen 1">
       </div>
       <div class="carousel-item">
-        <img src="images/carousel2/40.jpg" class="d-block w-100" alt="Imagen 2">
+        <img src="images/carousel/32.jpg" class="d-block w-100" alt="Imagen 2">
       </div>
       <div class="carousel-item">
-        <img src="images/carousel2/49.jpg" class="d-block w-100" alt="Imagen 3">
-      </div>
-      <div class="carousel-item">
-        <img src="images/carousel2/58.jpg" class="d-block w-100" alt="Imagen 3">
+        <img src="images/carousel/70.jpg" class="d-block w-100" alt="Imagen 3">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -55,76 +37,24 @@
     </button>
   </div>
 
+  <p class="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda earum aliquam culpa odit
+    tempora
+    possimus quidem, temporibus dicta blanditiis et quod, similique alias ab odio eius reiciendis cum impedit
+    pariatur!</p>
+  <p class="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quas hic reprehenderit
+    placeat optio at eos recusandae officia, est adipisci in maiores pariatur, accusamus tempore! Culpa nobis rerum
+    quaerat laudantium?</p>
+  <p class="left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur deleniti excepturi aperiam.
+    Dicta
+    deleniti reiciendis odio saepe voluptas commodi labore dolores dolore quae aut excepturi, at debitis, ducimus ea
+    eos?</p>
+  <p class="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque delectus, nemo repellat quo,
+    rerum
+    earum cupiditate fugit repellendus aspernatur adipisci quaerat aliquam pariatur libero voluptas minus nostrum
+    accusamus suscipit perferendis!</p>
 
-  <div id="preparation_process">
-    <h1 id="preparation_process_title"><b>PROCESO DE ELABORACIÓN</b></h1>
-    <div id="steps_container">
-      <!-- Paso 1 -->
-      <div class="step-container">
-        <div class="step">
-          <div class="circle">1</div>
-          <p class="step_description">En helados delicias nos preocupamos por brindarte el mejor sabor y frescura, 
-          es por eso que contamos con la mejor calidad y variedad de productos que desde 1961 ofrecemos para ti.</p>
-        </div>
-        <svg class="curve-line left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
-          <path d="M 553.5 257.4 h -382 c -61.3 0 -111 -49.7 -111 -111 l 0 0 c 0 -61.3 49.7 -111 111 -111 h 243"
-            stroke="rgb(237, 29, 102)" fill-opacity="0" stroke-opacity="1" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        </svg>
-      </div>
-  
-      <!-- Paso 2 -->
-      <div class="step-container">
-        <div class="step">
-          <div class="circle">2</div>
-          <p class="step_description">Nuestra empresa recibe Base para Helados, 
-          esta es almacenada en cuarto frío para su conservación y distribución a las diferentes áreas donde se realizan todos nuestros productos</p>
-        </div>
-        <svg class="curve-line right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
-          <path d="M 100 257.4 h 382 c 61.3 0 111 -49.7 111 -111 l 0 0 c 0 -61.3 -49.7 -111 -111 -111 h -243"
-            stroke="rgb(237, 29, 102)" fill-opacity="0" stroke-opacity="1" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        </svg>
-      </div>
-      <div class="step-container">
-        <div class="step">
-          <div class="circle">3</div>
-          <p class="step_description">Con dicha Base para Helados, realizamos paletas de crema, bolis, trompos y nieve de diferentes sabores. 
-          Una vez lista la nieve elaboramos nuestros conos, sandwich y hamburguesas.
-          </p>
-        </div>
-        <svg class="curve-line left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
-          <path d="M 100 257.4 h 382 c 61.3 0 111 -49.7 111 -111 l 0 0 c 0 -61.3 -49.7 -111 -111 -111 h -243"
-            stroke="rgb(237, 29, 102)" fill-opacity="0" stroke-opacity="1" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        </svg>
-      </div>
-      <div class="step-container">
-        <div class="step">
-          <div class="circle">4</div>
-          <p class="step_description">Otro proceso es la paleta de agua, ya que contiene fruta 100% natural, sabores como: Fresa, Limón, Piña ,Tamarindo y
-          Mango, así como nuestra gran variedad de paletas serán tus aliados para acompañar en verano.</p>
-        </div>
-        <svg class="curve-line right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
-          <path d="M 100 257.4 h 382 c 61.3 0 111 -49.7 111 -111 l 0 0 c 0 -61.3 -49.7 -111 -111 -111 h -243"
-            stroke="rgb(237, 29, 102)" fill-opacity="0" stroke-opacity="1" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        </svg>
-      </div>
-  
-      <!-- Paso 3 -->
-      <div class="step-container">
-        <div class="step">
-          <div class="circle">5</div>
-          <p class="step_description">Al finalizar, el producto se empaqueta y se almacena en el cuarto frío 
-          para después distribuirlo a las diferentes sucursales.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  
+
+
 
 
 
@@ -147,6 +77,3 @@
 </body>
 
 </html>
-
-
-

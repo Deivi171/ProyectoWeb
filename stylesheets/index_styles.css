@@ -76,7 +76,6 @@
     max-width: 150px;
 }
 
-
 /* Curvas SVG */
 .curve-line {
     display: block;
@@ -96,4 +95,75 @@
     top:-20px;
     left: 50px;
    /* transform: rotateY(180deg); /* Invierte la dirección */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f9f9f9;
+    /* background-image: url('/images/sky.jpg'); */
+}
+
+p {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    padding: 2rem 5rem;
+    margin: 2rem 0; /* Espaciado entre párrafos */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+p.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Líneas de conexión */
+p::before {
+    content: '';
+    position: absolute;
+    top: -2rem; /* Línea desde el tope */
+    left: 50%;
+    width: 3px;
+    height: 2rem; /* Longitud de la línea vertical */
+    background-color: red;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+p:first-of-type::before {
+    display: none; /* Sin línea en el primer párrafo */
+}
+
+/* Alternar bordes: Izquierda */
+p.left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: 3px solid red;
+    border-radius: 50px 0 0 50px;
+    border-right: none;
+    box-sizing: border-box;
+}
+
+/* Alternar bordes: Derecha */
+p.right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    border: 3px solid red;
+    border-radius: 0 50px 50px 0;
+    border-left: none;
+    box-sizing: border-box;
 }
